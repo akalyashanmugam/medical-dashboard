@@ -1,0 +1,63 @@
+.dashboard {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: #f7fafc;
+  min-height: calc(100vh - 72px);
+}
+
+.diagnosis-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+  min-height: min-content;
+  height: fit-content;
+}
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 40px;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #00bfa6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.error-screen {
+  text-align: center;
+  padding: 40px;
+  color: #e53e3e;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1280px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}

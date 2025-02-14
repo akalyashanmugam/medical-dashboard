@@ -1,0 +1,18 @@
+.diagnosis-history-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.diagnosis-history-card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 24px 0;
+}
+
+.blood-pressure-section {
+  margin-top: 0 !important;
+  margin-bottom: 24px;
+}
